@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+main {
+    width: 1020px;
+    padding-bottom: 70px;
+    
+}
+
+table { 
+    width: 100%;
+  
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    margin-bottom: -300px;
+    padding-top: 0px;
+    padding-right: 0px;
+    
+}
+
+audio{
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+nav {
+    width: 100%;
+    
+} 
+
+th {
+    border: 1px #000;
+}
+.navi{
+    color: white;
+    position: fixed;
+    top: 150px;
+    left: 15px;
+}
+
+#navi{
+    padding-left: 0px;
+    padding-top: -600px;
+    color: white;
+    background-color:  #000033;
+    border: 1px solid #000;
+    width: 20%;
+}
+#advertising{
+    padding-top: 400px;
+    width: 15%;
+}
+#advertising2{
+    padding-top: 400px;
+    width: 15%;
+}
+#news{
+    padding-top: 430px;
+}
+    .shooes{
+        width: 100%;
+    }
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+.title {
+    text-align: center;
+     background-color:  #ccccb3;
+}
+
+#foot{
+    position: relative;
+    top: 30px;
+}
+#nba{
+    height: 70px;
+}
+.text{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+#image{
+    height: 10px;
+}
+#stats{
+    background-color: #3385ff;
+}
+.injuri{
+    width: 90%;
+}
