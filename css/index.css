@@ -39,8 +39,8 @@ th {
 .navi{
     color: white;
     position: fixed;
-    top: 150px;
-    left: 15px;
+    top: 25%;
+    left: 2%;
 }
 
 #navi{
@@ -52,7 +52,7 @@ th {
     width: 20%;
 }
 #advertising{
-    padding-top: 400px;
+    padding-top: 25%;
     width: 15%;
 }
 #advertising2{
@@ -94,4 +94,7 @@ h1 {
 }
 .injuri{
     width: 90%;
+}
+.had_logo{
+    width: 100%;
 }
