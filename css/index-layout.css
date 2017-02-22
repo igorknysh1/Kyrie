@@ -1,0 +1,129 @@
+main {
+    display: flex;
+}
+main aside {
+    min-width: 20%;
+} 
+
+@media screen and (max-width: 720px) {
+    body {
+        background: linear-gradient( #d2282e, white);
+        margin-bottom: 70px;
+        margin-top: 30px;
+    }
+    header {
+        height: 100px;        
+    }
+
+    header h1 {
+        font-size: 5rem;
+    }
+    .width {
+        width: 100%;
+    }
+    article {
+    padding: 0;
+}
+
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .face{
+    width: 100%;
+}
+    article div {
+       
+        flex-basis: 100%;
+    }
+    aside div {
+       
+        flex-basis: 100%;
+    }
+   
+    main {
+        flex-wrap: wrap;
+    }
+    main article {
+        order: 2;
+        background: none;
+        
+    }
+    main nav {
+        order: 1;
+        
+    }
+    main aside {
+        order: 2;
+        
+    }
+    audio{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+    video{
+        width: 100%;
+    }
+    nav{
+      
+    position: fixed;
+    bottom: 0;
+   left: 0;
+   background: #d2282e;
+   font-size: 0.85em;
+   line-height: 0.8em;
+   height: 70px;
+   width: 100%;
+    }
+    nav ul { 
+    padding: 0;
+    }
+    .up {
+    position: fixed;
+    bottom: 10px;
+    right: 4px;
+    
+}
+.instagram {
+    
+    bottom: 12%;
+    right: 20px;
+    width: 40px;
+    
+}
+.facebook {
+    bottom: 20%;
+    right: 20px;
+    width: 40px;
+    
+}
+.youtube {
+    bottom: 28%;
+    right: 20px;
+    width: 40px;
+    
+}
+
+
+.uncle {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 43%;
+    
+}
+}
+
+@media screen and (max-width: 320px) {
+    article{
+        font-size: 1.5em;
+    }
+    nav{
+      
+   font-size: 0.85em;
+        
+    }
+    
+}

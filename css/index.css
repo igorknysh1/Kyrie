@@ -1,101 +1,145 @@
-html, body {
-    
+* {
     margin: 0;
-    min-height: 100%;
 }
-
-main {
-    width: 1020px;
-    padding-bottom: 70px;
+body {
     
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Monospace;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+.link {
+     width: 100%;  
+     height: 100%; 
 }
 
-table { 
-    width: 100%;
-  
-}
 
 header {
+    background-image: url("../hat.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /*padding-left: 10%;*/
+}
+
+
+header h1 {
+    font-size: 10rem;
+    color: white;
+}
+
+article {
+    padding: 2% 6% 1% 3%;
+     background: linear-gradient( #d2282e, white);
+}
+article h1{
+    text-align: center;
+}
+
+article div{
     width: 100%;
-    height: 30px;
-    margin-bottom: -300px;
-    padding-top: 0px;
-    padding-right: 0px;
+    text-align: center;
+}
+article img {
+    display: block;
+    width: 100%;
+}
+.face{
+    width: 50%;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table{
+    background: #8B0000;
+    border-collapse: collapse;
+    width: 100%;
+    /*margin: 15px auto 40px;*/
+    /*display: table;*/
+    /*border-spacing: 2px;*/
+    border-color: grey;
+}
+
+.characteristic{
+    text-align: center;
+}
+nav{
+    
+    font-size: 1.5em;
     
 }
+
+nav ul { 
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px; 
+    width: 100px;
+     text-align: center;
+}
+
+aside img {
+    display: block;
+    width: 100%;
+}
+aside h1 {
+    text-align: center;
+}
+aside div{
+    width: 100%;
+}
+
+footer .image {
+    text-align: center;
+}
+
 
 audio{
     position: fixed;
-    top: 5px;
-    right: 15px;
+    top: 1%;
+    right: 7%;
 }
-nav {
-    width: 100%;
-    
-} 
 
-th {
-    border: 1px #000;
+.red{
+    color: #000;
 }
-.navi{
-    color: white;
+.up {
     position: fixed;
-    top: 25%;
-    left: 2%;
+    bottom: 10%;
+    right: 4px;
+    width: 70px;
+    
 }
 
-#navi{
-    padding-left: 0px;
-    padding-top: -600px;
-    color: white;
-    background-color:  #000033;
-    border: 1px solid #000;
-    width: 20%;
+.instagram {
+    position: fixed;
+    bottom: 23%;
+    right: 25px;
+    width: 30px;
+    
 }
-#advertising{
-    padding-top: 25%;
-    width: 15%;
+.facebook {
+    position: fixed;
+    bottom: 30%;
+    right: 25px;
+    width: 30px;
+    
 }
-#advertising2{
-    padding-top: 400px;
-    width: 15%;
-}
-.news{
-    padding-top: 25%;
-}
-    .shooes{
-        width: 100%;
-    }
-
-h1 {
-    margin: 0;
-    text-align: center;
-}
-.title {
-    text-align: center;
-     background-color:  #ccccb3;
+.youtube {
+    position: fixed;
+    bottom: 37%;
+    right: 25px;
+    width: 30px;
+    
 }
 
-#foot{
-    position: relative;
-    top: 30px;
-}
-#nba{
-    height: 70px;
-}
-.text{
-    margin-left: 70px;
-    margin-right: 70px;
-}
-#image{
-    height: 10px;
-}
-#stats{
-    background-color: #3385ff;
-}
-.injuri{
-    width: 90%;
-}
-.had_logo{
-    width: 100%;
+.uncle {
+    display: none;
 }

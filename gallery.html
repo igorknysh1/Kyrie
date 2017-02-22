@@ -2,91 +2,105 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>gallery</title>
-        <link rel="stylesheet" href=css/index.css>
-    </head>
+        <title>news</title>
+        <link href="css/index.css" rel="stylesheet">
+    <link href="css/index-layout.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
     <body>
-        <header>
-            <a href="index.html" title="go_home">
-                <img class="had_logo" src="hat.jpg" width="1345" alt="cavs_logo">
-            </a>
+        <header >
+           <a class="link" href="index.html" title="go_home"></a>
             <audio src="pepsi.mp3" controls="controls">Your browser does not support the audio tag.
-    </audio>
+            </audio>
         </header>
-            <table>
-                <tr>
-                    <th id="navi">
-                            <div class="navi">
-                                <br>
-                                <a href="index.html">Home</a>
-                                <br>
-                                <a href="profile.html">Profile</a>
-                                <br>
-                                <br>
-                                <p>Welcome to our website.<br>
-                                    Here you will find the latest news<br>
-                                    and many interesting things<br>
-                                    from the world of basketball.
-                                </p>
-                            </div>
-                    </th>
-                    <th class="news">
-                        <p>Photo wallpaper</p>
-                        <img class="injuri" src="kyrie.jpg" alt="Kyrie Irving">
-                        <br>
+        <main>
+           <nav>
+              <ul><li>&nbsp;</li>
+                               <li><a href="index.html">Home</a></li>
+                               <li>&nbsp;</li>
+                                <li><a href="profile.html">Profile</a></li>
+                                <li>&nbsp;</li>
+                                <li><a href="#photo">Wallpaper</a></li>
+                                <li>&nbsp;</li>
+                                <li><a href="#video">Video</a><li>
+                            
+                  </ul>  
+                    </nav>
+                    <article>
+                        <h1 id="photo">Photo wallpaper</h1>
+                        <div><img src="kyrie.jpg" alt="Kyrie Irving"></div>
+                            <div>
                         <a href="gallery.html" title="first">&lt;</a>
                         <a href="gallery.html" title="first">1</a>
                         <a href="gallery.html" title="first">2</a>
                         <a href="gallery.html" title="first">3</a>
                         <a href="gallery.html" title="first">&gt;</a>
+                        </div>
+                        
                         <br>
-                        <br>
-                        <p>Video</p>
-                        Uncle drew chapter:
-                                  <a href="gallery.html" title="first">1</a>
-                        <a href="gallery.html" title="first">2</a>
-                        <a href="gallery.html" title="first">3</a>
-                        <br>
-                        <video width="600" height="400" controls="controls" poster="image.jpg" loop>
+                        <h1 id="video">Video</h1><br>
+                        <h2>Uncle drew chapter:
+                        <a href="gallery.html" title="first">1</a>
+                        <a href="gallery.html" title="two">2</a>
+                        <a href="gallery.html" title="three">3</a></h2>
+                        <div><video controls="controls" poster="image.jpg" loop>
                             <source src="UncleDrew.mp4" type="video/mp4">Your browser does not support the video tag.
-        
-                        </video>
-                    </th>
-                    <th id="advertising">
-                        <div class="advert">
-                            Kyrie's shooes
+                        </video></div>
+                    </article>
+                    <aside>
+                        <div><br>
+                            <h1 class="red">Kyrie's shooes</h1>
                             <br>
                             <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
                                 <img class="shooes" src="kyrie_1.gif" alt="kyrie_shooes_1">
                                 <br>
-                                Kyrie 1
+                               <h1>Kyrie 1</h1>
                             </a>
-                            <br>
+                        </div>
+                        <br>
+                        <div>
                             <a href="http://store.nike.com/us/en_us/product/kyrie-2-id/?piid=43580&pbid=988847092#?pbid=988847092" title="nike">
                                 <img class="shooes" src="kyrie_2.gif" alt="kyrie_shooes_2">
                                 <br>
-                                Kyrie 2
+                               <h1>Kyrie 2</h1>
                             </a>
+                        </div>
+                        <br>
+                        <div>
                             <a href="http://store.nike.com/us/en_us/pd/kyrie-3-mens-basketball-shoe/pid-11593068/pgid-11459060" title="nike">
                                 <img class="shooes" src="kyrie_3.gif" alt="kyrie_shooes_3">
                                 <br>
-                                Kyrie 3<br>
+                                <h1>Kyrie 3</h1>
                             </a>
-                        You can bye it here:<br>
-                        <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
-                            <img class="shooes" src="nike.png" alt="nike_logo">
-                            <br>NIKE.COM
-                        </a>
                         </div>
-                    </th>
-                </tr>
-            </table>
+                        <br>
+                        <div>
+                            <h1>You can bye it here:</h1><br>
+                            <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
+                                <img class="shooes" src="nike.png" alt="nike_logo">
+                                <br><h1>NIKE.COM</h1>
+                            </a>
+                        </div>
+                </aside>
+    </main>
 <footer>
-    <p id="foot">
-        Published <time datetime="2017-02-16">February 20, 2017</time>
-    </p>
-    <a id="nba" href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
-        <img id="amage" src="nba_logo.jpg" alt="NBA_logo">
+     <div class="image">
+    <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
+        <img class="width" src="nba_logo.jpg" alt="NBA_logo">
     </a>
+    </div>
+    <span>
+        Published in : <time datetime="2017-02-22">February 22, 2017</time>
+     </span>
+     <img class="uncle" src="uncle.png" alt="uncle_drew">
+     <a href="gallary.html" title="go_to_head">
+     <img class="up" src="up.png" alt="button_up"></a>
+     <a href="https://www.instagram.com/kyrieirving/" title="go_to_instagram">
+     <img class="instagram" src="instagram.png" alt="instagram"></a>
+     <a href="https://www.facebook.com/KyrieIrving/" title="go_to_facebook">
+     <img class="facebook" src="facebook.png" alt="facebook"></a>
+     <a href="https://www.youtube.com/playlist?list=PLXEP0qousrR0GkuQ3zl-X7n5DGMPzSti_" title="go_to_youtube">
+     <img class="youtube" src="youtube.png" alt="youtube"></a>
+     
 </footer>
 </body></html>
