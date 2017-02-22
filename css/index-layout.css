@@ -36,9 +36,13 @@ main aside {
        
         flex-basis: 100%;
     }
-    aside div {
+    aside h1 {
        
         flex-basis: 100%;
+    }
+    aside div {
+       
+        flex-basis: 50%;
     }
    
     main {
@@ -88,19 +92,19 @@ main aside {
 }
 .instagram {
     
-    bottom: 12%;
+    bottom: 14%;
     right: 20px;
     width: 40px;
     
 }
 .facebook {
-    bottom: 20%;
+    bottom: 22%;
     right: 20px;
     width: 40px;
     
 }
 .youtube {
-    bottom: 28%;
+    bottom: 30%;
     right: 20px;
     width: 40px;
     
@@ -116,7 +120,7 @@ main aside {
 }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     article{
         font-size: 1.5em;
     }
@@ -125,5 +129,8 @@ main aside {
    font-size: 0.85em;
         
     }
-    
+      aside div {
+       
+        flex-basis: 100%;
+      }
 }
