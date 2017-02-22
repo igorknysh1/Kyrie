@@ -11,6 +11,7 @@ main aside {
         margin-bottom: 70px;
         margin-top: 30px;
     }
+    
     header {
         height: 100px;        
     }
@@ -18,119 +19,121 @@ main aside {
     header h1 {
         font-size: 5rem;
     }
+    
     .width {
         width: 100%;
     }
+    
     article {
-    padding: 0;
-}
+        padding: 0;
+    }
 
     aside {
         display: flex;
         flex-wrap: wrap;
     }
+    
     .face{
-    width: 100%;
-}
+        width: 100%;
+    }
+    
     article div {
-       
-        flex-basis: 100%;
+       flex-basis: 100%;
     }
+    
     aside h1 {
-       
-        flex-basis: 100%;
+       flex-basis: 100%;
     }
+    
     aside div {
-       
         flex-basis: 50%;
     }
    
     main {
         flex-wrap: wrap;
     }
+    
     main article {
         order: 2;
         background: none;
-        
     }
+    
     main nav {
         order: 1;
-        
     }
+    
     main aside {
         order: 2;
-        
     }
+    
     audio{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-}
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+    
     video{
         width: 100%;
     }
+    
     nav{
-      
-    position: fixed;
-    bottom: 0;
-   left: 0;
-   background: #d2282e;
-   font-size: 0.85em;
-   line-height: 0.8em;
-   height: 70px;
-   width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #d2282e;
+        font-size: 0.85em;
+        line-height: 0.8em;
+        height: 70px;
+        width: 100%;
     }
+    
     nav ul { 
-    padding: 0;
+        padding: 0;
     }
+    
     .up {
-    position: fixed;
-    bottom: 10px;
-    right: 4px;
+        position: fixed;
+        bottom: 10px;
+        right: 4px;
+    }
     
-}
-.instagram {
+    .instagram {
+        bottom: 14%;
+        right: 20px;
+        width: 40px;
+    }
     
-    bottom: 14%;
-    right: 20px;
-    width: 40px;
-    
-}
-.facebook {
-    bottom: 22%;
-    right: 20px;
-    width: 40px;
-    
-}
-.youtube {
-    bottom: 30%;
-    right: 20px;
-    width: 40px;
-    
-}
+    .facebook {
+        bottom: 22%;
+        right: 20px;
+        width: 40px;
+    }
+    .youtube {
+        bottom: 30%;
+        right: 20px;
+        width: 40px;
+    }
 
-
-.uncle {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 43%;
-    
-}
+    .uncle {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 43%;
+    }
 }
 
 @media screen and (max-width: 420px) {
     article{
-        font-size: 1.5em;
-    }
-    nav{
-      
-   font-size: 0.85em;
-        
-    }
-      aside div {
-       
         flex-basis: 100%;
-      }
+       
+    }
+    
+    nav{
+       font-size: 0.85em;
+    }
+    
+    aside div {
+        flex-basis: 100%;
+    }
 }
