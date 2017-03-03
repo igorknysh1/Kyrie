@@ -2,66 +2,56 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>news</title>
-        <link rel="shortcut icon" href="../icon.jpg" type="image/jpg">
+        <title>GALLERY</title>
+        <link rel="shortcut icon" href="../uncle.png" type="image/png">
         <link href="css/index.css" rel="stylesheet">
         <link href="css/index-layout.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+           <div class="header"> <ul class="topnav" id="myTopnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="#photo">Wallpaper</a></li>
+   <li><a href="#video">Video</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul></div>
         <header>
             <a class="link" href="index.html" title="go_home"></a>
             <audio src="/audio/pepsi.mp3" controls="controls">Your browser does not support the audio tag.
             </audio>
         </header>
         <main>
-            <nav>
-                <ul>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="profile.html">Profile</a>
-                    </li>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="#photo">Wallpaper</a>
-                    </li>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="#video">Video</a>
-                    <li>
-                </ul>
-            </nav>
+           
             <article>
                 <h1 id="photo">Photo wallpaper</h1>
-                <div>
-                    <img src="kyrie.jpg" alt="Kyrie Irving">
-                </div>
-                <div>
-                    <a href="gallery.html" title="first">&lt;</a>
-                    <a href="gallery.html" title="first">1</a>
-                    <a href="gallery.html" title="first">2</a>
-                    <a href="gallery.html" title="first">3</a>
-                    <a href="gallery.html" title="first">&gt;</a>
-                </div>
+   
+    <div>
+      <img src="wallpaper/Kyrie1.jpg" alt="kyrie_wallpaper">
+        <img src="wallpaper/kyrie2.png" alt="kyrie_wallpaper1">
+        <img src="wallpaper/Kyrie3.jpg" alt="kyrie_wallpaper2">
+        <img src="wallpaper/kyrie4.jpg" alt="kyrie_wallpaper3">
+        <img src="wallpaper/kyrie5.jpg" alt="kyrie_wallpaper4">
+        <img src="wallpaper/Kyrie6.jpg" alt="kyrie_wallpaper5">
+        <img src="wallpaper/Kyrie7.jpg" alt="kyrie_wallpaper6">
+      
+    </div>
                 <br>
                 <h1 id="video">Video</h1>
                 <br>
                 <h2>
-                    Uncle drew chapter:
-                        <a href="gallery.html" title="first">1</a>
-                    <a href="gallery.html" title="two">2</a>
-                    <a href="gallery.html" title="three">3</a>
+                    Uncle drew chapter: 1, 2, 3, 4
                 </h2>
-                <div>
-                    <video controls="controls" poster="image.jpg" loop>
-                        <source src="UncleDrew.mp4" type="video/mp4">Your browser does not support the video tag.
-                        
-                    </video>
-                </div>
+              <iframe  src="https://www.youtube.com/embed/8DnKOc6FISU?list=PLXEP0qousrR0GkuQ3zl-X7n5DGMPzSti_" frameborder="0" allowfullscreen>
+                </iframe>  
             </article>
             <aside>
                 <br>
@@ -109,12 +99,11 @@
                 </a>
             </div>
             <span>
-                Published in : <time datetime="2017-02-22">February 22, 2017</time>
+                Published in : <time datetime="2017-02-22">February 22, 2017</time><br>
+                Real Time: <span id="target">Hidden Paragraph</span>
             </span>
             <img class="uncle" src="uncle.png" alt="uncle_drew">
-            <a href="gallary.html" title="go_to_head">
-                <img class="up" src="up.png" alt="button_up">
-            </a>
+            <img id="toTop" src="up.png" alt="button_up">
             <a href="https://www.instagram.com/kyrieirving/" title="go_to_instagram">
                 <img class="instagram" src="instagram.png" alt="instagram">
             </a>

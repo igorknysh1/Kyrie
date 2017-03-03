@@ -8,7 +8,7 @@ main aside {
 @media screen and (max-width: 720px) {
     body {
         background: linear-gradient( #d2282e, white);
-        margin-bottom: 70px;
+        margin-bottom: 80px;
         margin-top: 30px;
     }
     
@@ -66,6 +66,7 @@ main aside {
         order: 2;
     }
     
+    
     audio{
         position: fixed;
         top: 0;
@@ -77,26 +78,16 @@ main aside {
         width: 100%;
     }
     
-    nav{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background: #d2282e;
-        font-size: 0.85em;
-        line-height: 0.8em;
-        height: 70px;
-        width: 100%;
-    }
     
-    nav ul { 
-        padding: 0;
-    }
     
-    .up {
-        position: fixed;
+    #toTop {
+    width: 70px;
+    display:none;
+  position: fixed;
         bottom: 10px;
         right: 4px;
-    }
+}
+
     
     .instagram {
         bottom: 14%;
@@ -115,12 +106,12 @@ main aside {
         width: 40px;
     }
 
-    .uncle {
-        display: block;
-        position: fixed;
-        bottom: 0;
-        left: 43%;
-    }
+    /*.uncle {*/
+    /*    display: block;*/
+    /*    position: fixed;*/
+    /*    bottom: 0;*/
+    /*    left: 30%;*/
+    /*}*/
 }
 
 @media screen and (max-width: 420px) {
@@ -129,11 +120,85 @@ main aside {
        
     }
     
-    nav{
-       font-size: 0.85em;
-    }
     
     aside div {
         flex-basis: 100%;
     }
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:720px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: center;
+    display: inline-block;
+  }
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+        left: 0;
+        height: 70px;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+
+}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:720px) {
+    /*posst oppen*/
+  ul.topnav.responsive { position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #d2282e;
+        font-size: 0.85em;
+        line-height: 0.8em;
+        height: 250px;
+        width: 100%;}
+        
+  ul.topnav.responsive li.icon {
+   position: fixed;
+        bottom: 0;
+        margin: 0;
+        float: center;
+        height: 30px;
+        /*width: 100%;*/
+ 
+  }
+  ul.topnav.responsive li {
+      position: relative;
+        bottom: 0;
+        left: 0;
+        background: #d2282e;
+        font-size: 1em;
+        line-height: 0.4em;
+        height: 50px;
+        width: 100%;
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+.header{
+    width: 100%;
+    margin: 0;
+}
+/* Remove margins and padding from the list, and add a black background color */
+iframe{
+    width: 100%;
+}
+
+
+.images{
+    width: 100%;
 }

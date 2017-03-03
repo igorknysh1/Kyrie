@@ -2,43 +2,59 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>news</title>
+        <title>PROFILE</title>
         <link rel="shortcut icon" href="../icon.jpg" type="image/jpg">
         <link href="css/index.css" rel="stylesheet">
         <link href="css/index-layout.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+         <div class="header">   <ul class="topnav" id="myTopnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="#info">Inform</a></li>
+  <li><a href="#statictics">Statistics</a></li>
+  <li><a href="#other_side">Other side</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul></div>
         <header>
             <a class="link" href="index.html" title="go_home"></a>
             <audio src="/audio/pepsi.mp3" controls="controls">Your browser does not support the audio tag.
             </audio>
         </header>
         <main>
-            <nav>
-                <ul>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="#info">Inform</a>
-                    </li>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="#statictics">Statistics</a>
-                    <li>
-                    <li>&nbsp;</li>
-                    <li>
-                        <a href="#other_side">Other side</a>
-                    <li>
-                </ul>
-            </nav>
+            <!--<nav>-->
+            <!--    <ul>-->
+            <!--        <li>&nbsp;</li>-->
+            <!--        <li>-->
+            <!--            <a href="index.html">Home</a>-->
+            <!--        </li>-->
+            <!--        <li>&nbsp;</li>-->
+            <!--        <li>-->
+            <!--            <a href="gallery.html">Gallery</a>-->
+            <!--        </li>-->
+            <!--        <li>&nbsp;</li>-->
+            <!--        <li>-->
+            <!--            <a href="#info">Inform</a>-->
+            <!--        </li>-->
+            <!--        <li>&nbsp;</li>-->
+            <!--        <li>-->
+            <!--            <a href="#statictics">Statistics</a>-->
+            <!--        <li>-->
+            <!--        <li>&nbsp;</li>-->
+            <!--        <li>-->
+            <!--            <a href="#other_side">Other side</a>-->
+            <!--        <li>-->
+            <!--    </ul>-->
+            <!--</nav>-->
             <article>
                 <h1>Profile</h1>
                 <h2>LIFE STORY KYRIE IRVING</h2>
@@ -172,11 +188,10 @@ Fischer was a big fan of the online shorts and showed them to Bowen thinking the
             </div>
             <span>
                 Published in : <time datetime="2017-02-22">February 22, 2017</time>
-            </span>
+            </span><br>
+             Real Time: <span id="target">Hidden Paragraph</span>
             <img class="uncle" src="uncle.png" alt="uncle_drew">
-            <a href="profile.html" title="go_to_head">
-                <img class="up" src="up.png" alt="button_up">
-            </a>
+              <img id="toTop" src="up.png" alt="button_up">
             <a href="https://www.instagram.com/kyrieirving/" title="go_to_instagram">
                 <img class="instagram" src="instagram.png" alt="instagram">
             </a>
