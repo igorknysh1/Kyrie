@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GALLERY</title>
         <link rel="shortcut icon" href="../uncle.png" type="image/png">
         <link href="css/index.css" rel="stylesheet">
@@ -13,7 +14,6 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-            <script type="text/javascript" src="js/index.js"></script>
            <div class="header"> <ul class="topnav" id="myTopnav">
   <li><a href="index.html">Home</a></li>
   <li><a href="profile.html">Profile</a></li>
@@ -94,14 +94,15 @@
         </main>
         <footer>
             <div class="image">
-                <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
+               <span>
+                Published in : <time datetime="2017-02-22">February 22, 2017</time>
+                </span> <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
                     <img class="width" src="nba_logo.jpg" alt="NBA_logo">
                 </a>
             </div>
-            <span>
-                Published in : <time datetime="2017-02-22">February 22, 2017</time><br>
-                Real Time: <span id="target">Hidden Paragraph</span>
-            </span>
+            <p>Page loaded: <span id="page-loaded"></span></p>
+             <script type="text/javascript" src="js/index.js"></script>
+            <p class="clock">Real Time: <span id="target">Hidden Paragraph</span></p>
             <img class="uncle" src="uncle.png" alt="uncle_drew">
             <img id="toTop" src="up.png" alt="button_up">
             <a href="https://www.instagram.com/kyrieirving/" title="go_to_instagram">

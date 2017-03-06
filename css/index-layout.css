@@ -12,9 +12,10 @@ main aside {
         margin-top: 30px;
     }
     
-    header {
-        height: 100px;        
-    }
+   header {
+    background-image: url("../hat.jpg");
+    height: 100px;
+}
 
     header h1 {
         font-size: 5rem;
@@ -36,6 +37,20 @@ main aside {
     .face{
         width: 100%;
     }
+    
+    .header{
+    width: 100%;
+    margin: 0;
+}
+/* Remove margins and padding from the list, and add a black background color */
+iframe{
+    width: 100%;
+}
+
+
+.images{
+    width: 100%;
+}
     
     article div {
        flex-basis: 100%;
@@ -106,29 +121,7 @@ main aside {
         width: 40px;
     }
 
-    /*.uncle {*/
-    /*    display: block;*/
-    /*    position: fixed;*/
-    /*    bottom: 0;*/
-    /*    left: 30%;*/
-    /*}*/
-}
-
-@media screen and (max-width: 420px) {
-    article{
-        flex-basis: 100%;
-       
-    }
-    
-    
-    aside div {
-        flex-basis: 100%;
-    }
-}
-
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:720px) {
-  ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: center;
     display: inline-block;
@@ -143,14 +136,9 @@ main aside {
     overflow: hidden;
     background-color: #333;
     width: 100%;
-
-}
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:720px) {
-    /*posst oppen*/
-  ul.topnav.responsive { position: fixed;
+ul.topnav.responsive { position: fixed;
         bottom: 0;
         left: 0;
         background: #d2282e;
@@ -177,6 +165,8 @@ main aside {
         line-height: 0.4em;
         height: 50px;
         width: 100%;
+        padding: 0;
+    margin: 0;
     float: none;
     display: inline;
   }
@@ -185,20 +175,53 @@ main aside {
         bottom: 0;
         left: 0;
         width: 100%;
+        padding: 20px 0;
+    margin: 0;
     display: block;
     text-align: center;
   }
+  ul.topnav li a {
+       
+        padding: 25px 0;
+        margin: 0 60px;
+
+  }
+  
 }
-.header{
-    width: 100%;
+
+@media screen and (max-width: 420px) {
+    article{
+        flex-basis: 100%;
+    }
+
+    aside div {
+        flex-basis: 100%;
+    }
+    
+    ul.topnav.responsive li {
+        bottom: 0;
+        padding: 24px 0px;
+        margin: 0 0px;
+        
+  }
+  
+    ul.topnav {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    bottom: -15px;
 }
-/* Remove margins and padding from the list, and add a black background color */
-iframe{
-    width: 100%;
+ul.topnav.responsive li a {
+       
+        padding: 23px 0;
+margin: 0;
+  }
+  ul.topnav.responsive {
+height: 220px;
 }
+}
+ 
 
 
-.images{
-    width: 100%;
-}
+  
+

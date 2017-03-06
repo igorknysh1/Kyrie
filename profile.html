@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PROFILE</title>
         <link rel="shortcut icon" href="../icon.jpg" type="image/jpg">
         <link href="css/index.css" rel="stylesheet">
@@ -13,8 +14,7 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-            <script type="text/javascript" src="js/index.js"></script>
-         <div class="header">   <ul class="topnav" id="myTopnav">
+               <div class="header">   <ul class="topnav" id="myTopnav">
   <li><a href="index.html">Home</a></li>
   <li><a href="profile.html">Profile</a></li>
   <li><a href="gallery.html">Gallery</a></li>
@@ -31,30 +31,7 @@
             </audio>
         </header>
         <main>
-            <!--<nav>-->
-            <!--    <ul>-->
-            <!--        <li>&nbsp;</li>-->
-            <!--        <li>-->
-            <!--            <a href="index.html">Home</a>-->
-            <!--        </li>-->
-            <!--        <li>&nbsp;</li>-->
-            <!--        <li>-->
-            <!--            <a href="gallery.html">Gallery</a>-->
-            <!--        </li>-->
-            <!--        <li>&nbsp;</li>-->
-            <!--        <li>-->
-            <!--            <a href="#info">Inform</a>-->
-            <!--        </li>-->
-            <!--        <li>&nbsp;</li>-->
-            <!--        <li>-->
-            <!--            <a href="#statictics">Statistics</a>-->
-            <!--        <li>-->
-            <!--        <li>&nbsp;</li>-->
-            <!--        <li>-->
-            <!--            <a href="#other_side">Other side</a>-->
-            <!--        <li>-->
-            <!--    </ul>-->
-            <!--</nav>-->
+            
             <article>
                 <h1>Profile</h1>
                 <h2>LIFE STORY KYRIE IRVING</h2>
@@ -77,7 +54,7 @@
                 <table id="stats">
                     <tr>
                         <td rowspan="2">
-                            2016 - 17<br>SEASON
+                            <p><button>GET 2016 - 17 SEASON STATISTICS</button></p>
                         </td>
                         <td>MPG</td>
                         <td>FG%</td>
@@ -89,14 +66,14 @@
                         <td>BPG</td>
                     </tr>
                     <tr>
-                        <td>35.2</td>
-                        <td>46.7</td>
-                        <td>39.3</td>
-                        <td>89.9</td>
-                        <td>24.3</td>
-                        <td>3.2</td>
-                        <td>5.9</td>
-                        <td>0.2</td>
+                        <td><span id="stat-mpg"></span></td>
+                        <td><span id="stat-fg"></span></td>
+                        <td><span id="stat-tp"></span></td>
+                        <td><span id="stat-ft"></span></td>
+                        <td><span id="stat-ppg"></span></td>
+                        <td><span id="stat-rpg"></span></td>
+                        <td><span id="stat-apg"></span></td>
+                        <td><span id="stat-bpg"></span></td>
                     </tr>
                     <tr>
                         <td>CAREER STATS
@@ -182,14 +159,15 @@ Fischer was a big fan of the online shorts and showed them to Bowen thinking the
         </main>
         <footer>
             <div class="image">
-                <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
+               <span>
+                Published in : <time datetime="2017-02-22">February 22, 2017</time>
+                </span> <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
                     <img class="width" src="nba_logo.jpg" alt="NBA_logo">
                 </a>
             </div>
-            <span>
-                Published in : <time datetime="2017-02-22">February 22, 2017</time>
-            </span><br>
-             Real Time: <span id="target">Hidden Paragraph</span>
+            <p>Page loaded: <span id="page-loaded"></span></p>
+           <script type="text/javascript" src="js/index.js"></script>
+           <p class="clock"> Real Time: <span id="target">Hidden Paragraph</span></p>
             <img class="uncle" src="uncle.png" alt="uncle_drew">
               <img id="toTop" src="up.png" alt="button_up">
             <a href="https://www.instagram.com/kyrieirving/" title="go_to_instagram">
