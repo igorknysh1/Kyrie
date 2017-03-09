@@ -1,7 +1,10 @@
+
+//clock
 setInterval(function() {
 	target.innerHTML = (new Date()).toLocaleTimeString();
 }, 1000);
 
+//scroll up
 $(function() {
     $(window).scroll(function() {
         if($(this).scrollTop() != 0) {
@@ -14,6 +17,7 @@ $(function() {
     });
 });
 
+//statistics
 document.querySelector('#button').addEventListener('click', getStat);
 function getStat() {
     var xhr = new XMLHttpRequest();
