@@ -1,27 +1,57 @@
-main {
-    display: flex;
-}
-main aside {
-    min-width: 20%;
-} 
+@media screen and (max-width: 991px) {
+    header {
+        height: 180px;
+        padding-top: 100px;
+    }
 
-@media screen and (max-width: 720px) {
-    body {
-        background: linear-gradient( #d2282e, white);
-        margin-bottom: 80px;
-        margin-top: 30px;
+    audio {
+        top: 101px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body #navbottom {
+        visibility: visible;
+    }
+
+    body #nav {
+        visibility: hidden;
+        position: bottom;
+        padding-top: 25px;
+    }
+
+    audio {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 25px;
     }
     
-   header {
-    background-image: url("../hat.jpg");
-    height: 100px;
-}
+    form {
+        margin: 0 auto;
+    }
+    
+    body {
+        background: linear-gradient( #d2282e, white);
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+    
+    footer {
+        padding-bottom: 50px;
+    }
+    
+    header {
+        background-image: url("../img/hat.jpg");
+        height: 180px;
+    }
 
     header h1 {
         font-size: 5rem;
     }
     
-    .width {
+    .nba {
         width: 100%;
     }
     
@@ -34,23 +64,23 @@ main aside {
         flex-wrap: wrap;
     }
     
-    .face{
+    .face {
         width: 100%;
     }
     
-    .header{
-    width: 100%;
-    margin: 0;
-}
-/* Remove margins and padding from the list, and add a black background color */
-iframe{
-    width: 100%;
-}
+    .go_up {
+        width: 100%;
+        margin: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
 
 
-.images{
-    width: 100%;
-}
+    .images {
+        width: 100%;
+    }
     
     article div {
        flex-basis: 100%;
@@ -81,147 +111,50 @@ iframe{
         order: 2;
     }
     
-    
-    audio{
-        position: fixed;
-        top: 0;
-        right: 0;
+    video {
         width: 100%;
     }
-    
-    video{
-        width: 100%;
-    }
-    
-    
     
     #toTop {
-    width: 70px;
-    display:none;
-  position: fixed;
-        bottom: 10px;
+        width: 70px;
+        display:none;
+        position: fixed;
+        bottom: 52px;
         right: 4px;
-}
-
-    
+    }
+        
     .instagram {
-        bottom: 14%;
+        bottom: 130px;
         right: 20px;
         width: 40px;
     }
     
     .facebook {
-        bottom: 22%;
+        bottom: 180px;
         right: 20px;
         width: 40px;
     }
+    
     .youtube {
-        bottom: 30%;
+        bottom: 220px;
         right: 20px;
         width: 40px;
     }
-
-    ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: center;
-    display: inline-block;
-  }
-  ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-        left: 0;
-        height: 70px;
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
 }
 
-ul.topnav.responsive { position: fixed;
-        bottom: 0;
-        left: 0;
-        background: #d2282e;
-        font-size: 0.85em;
-        line-height: 0.8em;
-        height: 250px;
-        width: 100%;}
-        
-  ul.topnav.responsive li.icon {
-   position: fixed;
-        bottom: 0;
-        margin: 0;
-        float: center;
-        height: 30px;
-        /*width: 100%;*/
- 
-  }
-  ul.topnav.responsive li {
-      position: relative;
-        bottom: 0;
-        left: 0;
-        background: #d2282e;
-        font-size: 1em;
-        line-height: 0.4em;
-        height: 50px;
-        width: 100%;
-        padding: 0;
-    margin: 0;
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-    margin: 0;
-    display: block;
-    text-align: center;
-  }
-  ul.topnav li a {
-       
-        padding: 25px 0;
-        margin: 0 60px;
-
-  }
-  
+@media screen and (max-width: 600px) {
+    header {
+        height: 180px;
+        padding-top: 100px;
+    }
 }
 
 @media screen and (max-width: 420px) {
-    article{
+    article {
         flex-basis: 100%;
     }
 
     aside div {
         flex-basis: 100%;
     }
-    
-    ul.topnav.responsive li {
-        bottom: 0;
-        padding: 24px 0px;
-        margin: 0 0px;
-        
-  }
-  
-    ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    bottom: -15px;
 }
-ul.topnav.responsive li a {
-       
-        padding: 23px 0;
-margin: 0;
-  }
-  ul.topnav.responsive {
-height: 220px;
-}
-}
- 
-
-
-  
-

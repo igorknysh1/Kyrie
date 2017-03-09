@@ -1,35 +1,20 @@
-//time start
-document.querySelector('#page-loaded').innerHTML = (new Date()).toLocaleString();
-//clock
 setInterval(function() {
 	target.innerHTML = (new Date()).toLocaleTimeString();
 }, 1000);
-//scroll
+
 $(function() {
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#toTop').fadeIn();
-} else {
-$('#toTop').fadeOut();
-}});
-$('#toTop').click(function() {
-$('body,html').animate({scrollTop:0},1000);
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+    }});
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},2000);
+    });
 });
-});
-//burger
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
 
-//statistics
-document.querySelector('button').addEventListener('click', getStat);
-
+document.querySelector('#button').addEventListener('click', getStat);
 function getStat() {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {

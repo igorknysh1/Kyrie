@@ -1,13 +1,10 @@
-// Here we add Event listener on submit button
 document.querySelector('input[type=submit]').addEventListener('click', sendForm);
-
 function sendForm(e) {
-  e.preventDefault(); // Prevent form 
+  e.preventDefault();
   var form = document.querySelector('form');
   if (!form[0].checkValidity()) {
-    form.find(':submit').click(); // We try to submit invalid form to show message 
+    form.find(':submit').click(); 
   } else {
-    // Instead of alert write code that sends valid form
     $.ajax({
             url: "https://formspree.io/lukasskott100@gmail.com", 
             method: "POST",

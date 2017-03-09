@@ -4,44 +4,148 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOME</title>
-        <link rel="shortcut icon" href="icon.jpg" type="image/jpg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/icon.jpg" type="image/jpg">
         <link href="css/index.css" rel="stylesheet">
         <link href="css/index-layout.css" rel="stylesheet">
-        <script src="js/mediaelement-and-player.min.js"></script>
-        <link rel="stylesheet" href="css/style.css" media="screen">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-       <div class="header"> <ul class="topnav" id="myTopnav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="profile.html">Profile</a></li>
-  <li><a href="gallery.html">Gallery</a></li>
-  <li><a href="#news">News week</a></li>
-   <li><a href="#allstar">All-Star</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-  </li>
-</ul></div>
-<header>
-            <a class="link" href="index.html" title="go_home"></a>
-            <audio src="pepsi.mp3" controls="controls">Your browser does not support the audio tag.
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <div class="navbar navbar-inverse" id="nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Kyrie_Irving" title="wikipedia_kyrie_irving">Kyrie Irving</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#myNavbar">
+                                <span class="glyphicon glyphicon-home"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <span class="glyphicon glyphicon-picture"></span>
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news">
+                                <span class="glyphicon glyphicon-globe"></span>
+                                News week
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#allstar">
+                                <span class="glyphicon glyphicon-star"></span>
+                                All-Star
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#form">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                Sign up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="smooth">
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                Down
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-inverse navbar-default navbar-fixed-bottom" id="navbottom" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Kyrie_Irving">Kyrie Irving</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar2">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#myNavbar2">
+                                <span class="glyphicon glyphicon-home"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <span class="glyphicon glyphicon-picture"></span>
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news">
+                                <span class="glyphicon glyphicon-user"></span>
+                                News week
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#allstar">
+                                <span class="glyphicon glyphicon-star"></span>
+                                All-Star
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#form">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                Sign up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="smooth">
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                Down
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a class="link" id="Navbar" href="index.html" title="go_home"></a>
+            <audio src="media/pepsi.mp3" controls="controls">Your browser does not support the audio tag.
             </audio>
-    <div class="audio-player">
-    <h1>Demo - Preview Song</h1>
-    <img class="cover" src="img/cover.png" alt="">
-    <audio id="audio-player" src="demo.mp3" type="audio/mp3" controls="controls"></audio>
-</div>
-</header>
+        </header>
         <main>
-            <article><div class="column">
-                <h1 id="news">News week</h1>
-                <br>
-                <h2 class="cavs">James, Irving, Love all play for Cavaliers against Thunder</h2>
-                </div><hr>
+            <article>
+                <div class="column">
+                    <h1 id="news">News week</h1>
+                    <br>
+                    <h2 class="cavs">James, Irving, Love all play for Cavaliers against Thunder</h2>
+                </div>
+                <hr>
                 <span>Feb 9, 2017 8:20 PM ET</span>
                 <br>
                 <br>
@@ -78,87 +182,106 @@
                                 No one's talking about turning the All-Star Game into a mid-90s Knicks game at the Garden. Kerr said there is a way to do this "without taking a charge."
                                 It starts with a chat.
                                 "Going forward, I'm sure we've got to talk about it and just go out and compete," Irving said.
-                            </p><br>
-                            <h3>If you want to be notified of updates to our site please fill in:</h3><hr>
-                            <h2>THIS FORM</h2>
-                            
-                             <br><form>
-        <label for="client-name">Your name:</label>
-        <input type="text" id="client-name" required>
-        <br><br>
-        <label for="client-email">Your email:</label>
-        <input type="email" id="client-email">
-        <br><br>
-        <label for="comment">Your comment:</label><br>
-        <input type="textarea" id="comment">
-        <br><br>
-        <input type="submit" id="btn-submit">
-    </form>
-    <script src="js/form.js"></script>
+                            </p>
+                <br>
+                <h3>If you want to be notified of updates to our site please fill in:</h3>
+                <hr>
+                <h2 id="form">THIS FORM</h2>
+                <form>
+                    <nav class="navbar navbar-light bg-faded">
+                        <div class="form-inline">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Username" id="client-name" aria-describedby="basic-addon1" required>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-light bg-faded">
+                        <div class="form-inline">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon2">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" placeholder="User Email" id="client-email" aria-describedby="basic-addon2" required>
+                            </div>
+                        </div>
+                    </nav>
+                    <textarea id="comment" rows="3" placeholder="Your comments" style="margin-top: 0px;  margin-bottom: 0px; height: 78px; width: 100%;"></textarea>
+                    <!--<label for="client-name">Your name:</label>-->
+                    <!--<input type="text" id="client-name" required>-->
+                    <!--<br><br>-->
+                    <!--<label for="client-email">Your email:</label>-->
+                    <!--<input type="email" id="client-email">-->
+                    <!--<br><br>-->
+                    <!--<label for="comment">Your comment:</label><br>-->
+                    <!--<input type="textarea" id="comment">-->
+                    <!--<br>-->
+                    <br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="btn-submit" style="text-align: center;">
+                    </div>
+                </form>
+                <script src="js/form.js"></script>
             </article>
             <br>
             <aside>
-                <h1 class="red">Kyrie's shooes</h1>
-                
-                <br>
+                <h1>Kyrie's shooes</h1>
                 <div>
                     <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
-                        <img class="shooes" src="kyrie_1.gif" alt="kyrie_shooes_1">
-                        <br>
+                        <img class="shooes" src="img/kyrie_1.gif" alt="kyrie_shooes_1">
                         <h1>Kyrie 1</h1>
                     </a>
                 </div>
-                <br>
                 <div>
                     <a href="http://store.nike.com/us/en_us/product/kyrie-2-id/?piid=43580&pbid=988847092#?pbid=988847092" title="nike">
-                        <img class="shooes" src="kyrie_2.gif" alt="kyrie_shooes_2">
-                        <br>
+                        <img class="shooes" src="img/kyrie_2.gif" alt="kyrie_shooes_2">
                         <h1>Kyrie 2</h1>
                     </a>
                 </div>
-                <br>
                 <div>
                     <a href="http://store.nike.com/us/en_us/pd/kyrie-3-mens-basketball-shoe/pid-11593068/pgid-11459060" title="nike">
-                        <img class="shooes" src="kyrie_3.gif" alt="kyrie_shooes_3">
-                        <br>
+                        <img class="shooes" src="img/kyrie_3.gif" alt="kyrie_shooes_3">
                         <h1>Kyrie 3</h1>
                     </a>
                 </div>
-                <br>
                 <div>
-                    <h1>You can bye it here:</h1>
-                    <br>
+                    <h4>You can bye it here:</h4>
                     <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
-                        <img class="shooes" src="nike.png" alt="nike_logo">
-                        <br>
+                        <img class="shooes" src="img/nike.png" alt="nike_logo">
                         <h1>NIKE.COM</h1>
                     </a>
                 </div>
             </aside>
         </main>
-        <footer >
+        <footer id="footer">
             <div class="image">
-               <span>
-                Published in : <time datetime="2017-02-22">February 22, 2017</time>
-                </span> <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
-                    <img class="width" src="nba_logo.jpg" alt="NBA_logo">
+                <span>
+                    Published in : <time datetime="2017-02-22">February 22, 2017</time>
+                </span>
+                <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
+                    <img class="nba" src="img/nba_logo.jpg" alt="NBA_logo">
                 </a>
             </div>
-            <p>Page loaded: <span id="page-loaded"></span></p>
-            <script type="text/javascript" src="js/index.js"></script>
-           <p class="clock"> Real Time: <span id="target">Hidden Paragraph</span></p>
-            <a href="#header" title="go_navi">
-                <img class="uncle" src="uncle.png" alt="uncle_drew"></a>
-                <img id="toTop" src="up.png" alt="button_up">
+            <p class="clock">
+                Real Time: <span id="target">Clock don't work</span>
+            </p>
+            <a href="#go_up" title="go_navi">
+                <img id="toTop" src="img/up.svg" alt="button_up">
+            </a>
             <a href="https://www.instagram.com/kyrieirving/" title="go_to_instagram">
-                <img class="instagram" src="instagram.png" alt="instagram">
+                <img class="instagram" src="img/instagram.svg" alt="instagram">
             </a>
             <a href="https://www.facebook.com/KyrieIrving/" title="go_to_facebook">
-                <img class="facebook" src="facebook.png" alt="facebook">
+                <img class="facebook" src="img/facebook.svg" alt="facebook">
             </a>
             <a href="https://www.youtube.com/playlist?list=PLXEP0qousrR0GkuQ3zl-X7n5DGMPzSti_" title="go_to_youtube">
-                <img class="youtube" src="youtube.png" alt="youtube">
+                <img class="youtube" src="img/youtube.svg" alt="youtube">
             </a>
         </footer>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/collapse-navbar.js"></script>
     </body>
 </html>

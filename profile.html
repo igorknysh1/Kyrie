@@ -4,58 +4,161 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PROFILE</title>
-        <link rel="shortcut icon" href="../icon.jpg" type="image/jpg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/icon.jpg" type="image/jpg">
         <link href="css/index.css" rel="stylesheet">
         <link href="css/index-layout.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-               <div class="header">   <ul class="topnav" id="myTopnav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="profile.html">Profile</a></li>
-  <li><a href="gallery.html">Gallery</a></li>
-  <li><a href="#info">Inform</a></li>
-  <li><a href="#statictics">Statistics</a></li>
-  <li><a href="#other_side">Other side</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-  </li>
-</ul></div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <div class="navbar navbar-inverse" id="nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Kyrie_Irving" title="wikipedia_kyrie_irving">Kyrie Irving</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <span class="glyphicon glyphicon-picture"></span>
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#info">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                                Info
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#statictics">
+                                <span class="glyphicon glyphicon-stats"></span>
+                                Statictics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#other_side">
+                                <span class="glyphicon glyphicon-film"></span>
+                                Other side
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                Sign up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="smooth">
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                Down
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-inverse navbar-default navbar-fixed-bottom" id="navbottom" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Kyrie_Irving">Kyrie Irving</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar2">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <span class="glyphicon glyphicon-picture"></span>
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#info">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                                Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#statictics">
+                                <span class="glyphicon glyphicon-stats"></span>
+                                Statictics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#other_side">
+                                <span class="glyphicon glyphicon-film"></span>
+                                Other side
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                Sign up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="smooth">
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                Down
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <header>
-            <a class="link" href="index.html" title="go_home"></a>
-            <audio src="pepsi.mp3" controls="controls">Your browser does not support the audio tag.
+            <a class="link" id="Navbar" href="index.html" title="go_home"></a>
+            <audio src="media/pepsi.mp3" controls="controls">Your browser does not support the audio tag.
             </audio>
         </header>
         <main>
-            
             <article>
-                <h1>Profile</h1>
-                <h2>LIFE STORY KYRIE IRVING</h2>
+                <div class="column">
+                    <h1>Profile</h1>
+                    <h2>LIFE STORY KYRIE IRVING</h2>
+                </div>
                 <hr>
                 <span>Feb 10, 2017 20:20 PM ET</span>
-                <p>
                 <h1 id="info">Info</h1>
-                <br>
-                <a href="https://en.wikipedia.org/wiki/Kyrie_Irving" title="wikipedia">
+                <a href="https://en.wikipedia.org/wiki/Kyrie_Irving" title="wikipedia_kyrie_irving">
                     <div>
-                        <img class="face" src="kyrie_Championship.jpg" alt="kyrie_irving">
+                        <img class="face" src="img/kyrie_Championship.jpg" alt="kyrie_irving">
                     </div>
                 </a>
                 <p>Kyrie Irving Andrew( Eng. The Kyrie to Andrew of Irving ; on March 23 1992 , Melbourne , Victoria , Australia ) - Australian and American professional basketball player who currently plays for the team NBA " Cleveland Cavaliers " 
                                         After a year spent in Duke University , Irving has been selected under the first number in the NBA draft in 2011 , "the Cleveland Cavaliers' team. In his debut season in the "Cavs' Irving, gaining 18.5 points and 5.4 transmission per game, he was voted rookie of the year . During his stay in the NBA Kairi thrice participated in the all-NBA , where in 2014 received the title of most valuable player and was a member of the third team all-star . At the international level, Irving advocated basketball Team USA , as part of which became the world champion, and was named the most valuable player of the 2014 World Cup .
                             </p>
-                <br>
                 <h1 id="statictics">Statistics</h1>
-                <br>
                 <table id="stats">
                     <tr>
-                        <td rowspan="2">
-                            <p><button>GET 2016 - 17 SEASON STATISTICS</button></p>
-                        </td>
+                        <td>Indexes</td>
                         <td>MPG</td>
                         <td>FG%</td>
                         <td>3P%</td>
@@ -66,18 +169,36 @@
                         <td>BPG</td>
                     </tr>
                     <tr>
-                        <td><span id="stat-mpg"></span></td>
-                        <td><span id="stat-fg"></span></td>
-                        <td><span id="stat-tp"></span></td>
-                        <td><span id="stat-ft"></span></td>
-                        <td><span id="stat-ppg"></span></td>
-                        <td><span id="stat-rpg"></span></td>
-                        <td><span id="stat-apg"></span></td>
-                        <td><span id="stat-bpg"></span></td>
+                        <td>
+                            <button id="button" class="btn btn-success">GET 2016 - 17 SEASON STATISTICS</button>
+                        </td>
+                        <td>
+                            <span id="stat-mpg"></span>
+                        </td>
+                        <td>
+                            <span id="stat-fg"></span>
+                        </td>
+                        <td>
+                            <span id="stat-tp"></span>
+                        </td>
+                        <td>
+                            <span id="stat-ft"></span>
+                        </td>
+                        <td>
+                            <span id="stat-ppg"></span>
+                        </td>
+                        <td>
+                            <span id="stat-rpg"></span>
+                        </td>
+                        <td>
+                            <span id="stat-apg"></span>
+                        </td>
+                        <td>
+                            <span id="stat-bpg"></span>
+                        </td>
                     </tr>
                     <tr>
-                        <td>CAREER STATS
-                                    </td>
+                        <td>CAREER STATS</td>
                         <td>34.1</td>
                         <td>45.5</td>
                         <td>38</td>
@@ -97,17 +218,16 @@
                     FROM  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duke<br>
                     NBA DEBUT  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2011<br>
                     YEARS IN NBA  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<br>PREVIOUSLY CLE 2011-17
-  
+                
                 </div>
                 <br>
                 <div>
-                    <img class="injuri" src="injuri.jpg" alt="kyrie_injuri">
+                    <img class="injuri" src="img/injuri.jpg" alt="kyrie_injuri">
                 </div>
                 <br>
                 <h1 id="other_side">Other side</h1>
-                <br>
                 <div>
-                    <img src="other.jpg" alt="kyrie_other">
+                    <img src="img/other.jpg" alt="kyrie_other">
                 </div>
                 <br>
                 <p>&nbsp;Cleveland Cavaliers superstar Kyrie Irving is hoping for a big screen slam dunk.
@@ -119,66 +239,61 @@ Fischer was a big fan of the online shorts and showed them to Bowen thinking the
  in a tournament and goes on a road trip to round the old squad up to play.</p>
             </article>
             <aside>
-                <br>
-                <h1>Kyrie's shooes</h1>
-                <br>
+                <h1 class="red">Kyrie's shooes</h1>
                 <div>
                     <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
-                        <img class="shooes" src="kyrie_1.gif" alt="kyrie_shooes_1">
-                        <br>
+                        <img class="shooes" src="img/kyrie_1.gif" alt="kyrie_shooes_1">
                         <h1>Kyrie 1</h1>
                     </a>
                 </div>
-                <br>
                 <div>
                     <a href="http://store.nike.com/us/en_us/product/kyrie-2-id/?piid=43580&pbid=988847092#?pbid=988847092" title="nike">
-                        <img class="shooes" src="kyrie_2.gif" alt="kyrie_shooes_2">
-                        <br>
+                        <img class="shooes" src="img/kyrie_2.gif" alt="kyrie_shooes_2">
                         <h1>Kyrie 2</h1>
                     </a>
                 </div>
-                <br>
                 <div>
                     <a href="http://store.nike.com/us/en_us/pd/kyrie-3-mens-basketball-shoe/pid-11593068/pgid-11459060" title="nike">
-                        <img class="shooes" src="kyrie_3.gif" alt="kyrie_shooes_3">
-                        <br>
+                        <img class="shooes" src="img/kyrie_3.gif" alt="kyrie_shooes_3">
                         <h1>Kyrie 3</h1>
                     </a>
                 </div>
-                <br>
                 <div>
-                    <h1>You can bye it here:</h1>
-                    <br>
+                    <h4>You can bye it here:</h4>
                     <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
-                        <img class="shooes" src="nike.png" alt="nike_logo">
-                        <br>
+                        <img class="shooes" src="img/nike.png" alt="nike_logo">
                         <h1>NIKE.COM</h1>
                     </a>
                 </div>
             </aside>
         </main>
-        <footer>
+        <footer id="footer">
             <div class="image">
-               <span>
-                Published in : <time datetime="2017-02-22">February 22, 2017</time>
-                </span> <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
-                    <img class="width" src="nba_logo.jpg" alt="NBA_logo">
+                <span>
+                    Published in : <time datetime="2017-02-22">February 22, 2017</time>
+                </span>
+                <a href="https://ua.tribuna.com/nba/?gr=www" title="go_NBA">
+                    <img class="nba" src="img/nba_logo.jpg" alt="NBA_logo">
                 </a>
             </div>
-            <p>Page loaded: <span id="page-loaded"></span></p>
-           <script type="text/javascript" src="js/index.js"></script>
-           <p class="clock"> Real Time: <span id="target">Hidden Paragraph</span></p>
-            <img class="uncle" src="uncle.png" alt="uncle_drew">
-              <img id="toTop" src="up.png" alt="button_up">
+            <p class="clock">
+                Real Time: <span id="target">Clock don't work</span>
+            </p>
+            <a href="#go_up" title="go_navi">
+                <img id="toTop" src="img/up.svg" alt="button_up">
+            </a>
             <a href="https://www.instagram.com/kyrieirving/" title="go_to_instagram">
-                <img class="instagram" src="instagram.png" alt="instagram">
+                <img class="instagram" src="img/instagram.svg" alt="instagram">
             </a>
             <a href="https://www.facebook.com/KyrieIrving/" title="go_to_facebook">
-                <img class="facebook" src="facebook.png" alt="facebook">
+                <img class="facebook" src="img/facebook.svg" alt="facebook">
             </a>
             <a href="https://www.youtube.com/playlist?list=PLXEP0qousrR0GkuQ3zl-X7n5DGMPzSti_" title="go_to_youtube">
-                <img class="youtube" src="youtube.png" alt="youtube">
+                <img class="youtube" src="img/youtube.svg" alt="youtube">
             </a>
         </footer>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/collapse-navbar.js"></script>
     </body>
 </html>
