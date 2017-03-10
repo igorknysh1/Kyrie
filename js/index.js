@@ -38,4 +38,8 @@ function getStat() {
     xhr.send();
 }
 
+$(function(){
+   new WOW().init()
+});
+
 

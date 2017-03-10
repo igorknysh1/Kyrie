@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="shortcut icon" href="img/icon.jpg" type="image/jpg">
+        <link href="css/animate.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
         <link href="css/index-layout.css" rel="stylesheet">
     </head>
@@ -135,7 +136,7 @@
         </div>
         <header>
             <a class="link" id="Navbar" href="index.html" title="go_home"></a>
-            <audio src="media/pepsi.mp3" controls="controls">Your browser does not support the audio tag.
+            <audio class="wow lightSpeedIn" src="media/pepsi.mp3" controls="controls">Your browser does not support the audio tag.
             </audio>
         </header>
         <main>
@@ -208,7 +209,7 @@
                             </div>
                         </div>
                     </nav>
-                    <textarea id="comment" rows="3" placeholder="Your comments" style="margin-top: 0px;  margin-bottom: 0px; height: 78px; width: 100%;"></textarea>
+                    <textarea id="comment" rows="3" placeholder="Your comments"></textarea>
                     <!--<label for="client-name">Your name:</label>-->
                     <!--<input type="text" id="client-name" required>-->
                     <!--<br><br>-->
@@ -219,18 +220,18 @@
                     <!--<input type="textarea" id="comment">-->
                     <!--<br>-->
                     <br>
-                    <div style="text-align: center;">
-                        <input type="submit" id="btn-submit" style="text-align: center;">
+                    <div class="wow zoomIn">
+                        <input type="submit" id="btn-submit">
                     </div>
                 </form>
-                <script src="js/form.js"></script>
+             
             </article>
             <br>
-            <aside>
+            <aside class="wow slideInRight">
                 <h1>Kyrie's shooes</h1>
-                <div>
+                <div class="wow slideInRight">
                     <a href="http://store.nike.com/us/en_us/pw/kyrie-irving/muo" title="nike">
-                        <img class="shooes" src="img/kyrie_1.gif" alt="kyrie_shooes_1">
+                        <img class="shooes"  src="img/kyrie_1.gif" alt="kyrie_shooes_1">
                         <h1>Kyrie 1</h1>
                     </a>
                 </div>
@@ -281,7 +282,10 @@
             </a>
         </footer>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/form.js"></script>
         <script type="text/javascript" src="js/smooth-scroll.js"></script>
         <script type="text/javascript" src="js/collapse-navbar.js"></script>
+        <script type="text/javascript" src="lib/wow.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
