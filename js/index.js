@@ -1,8 +1,6 @@
 
 //clock
-setInterval(function() {
-	target.innerHTML = (new Date()).toLocaleTimeString();
-}, 1000);
+
 
 //scroll up
 $(function() {
@@ -15,10 +13,14 @@ $(function() {
     $('#toTop').click(function() {
         $('body,html').animate({scrollTop:0},1500);
     });
+     new WOW().init();
+     setInterval(function() {
+	target.innerHTML = (new Date()).toLocaleTimeString();
+}, 1000);
 });
 
 //statistics
-document.querySelector('#button').addEventListener('click', getStat);
+document.querySelector('#stats').addEventListener('click', getStat);
 function getStat() {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -37,9 +39,4 @@ function getStat() {
     xhr.open('GET', 'data.json', true);
     xhr.send();
 }
-
-$(function(){
-   new WOW().init()
-});
-
 

@@ -62,7 +62,8 @@ iframe {
     }
     
     article {
-        padding: 0;
+        
+        padding: 2px 5%;
     }
 
     aside {
