@@ -5,7 +5,7 @@ $(function() {
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
-            }, 2000);
+            }, 1500);
         }
     });
 });
