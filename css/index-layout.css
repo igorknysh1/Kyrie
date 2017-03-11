@@ -19,6 +19,12 @@
         position: bottom;
         padding-top: 25px;
     }
+iframe {
+   
+   height: 350px;
+   
+}
+
 
     audio {
         position: fixed;
@@ -87,7 +93,7 @@
     }
     
     aside{
-       width: 100%;
+       flex-basis: 100%;
     }
     aside h1 {
        flex-basis: 100%;
@@ -150,6 +156,11 @@
         height: 180px;
         padding-top: 100px;
     }
+    iframe {
+   
+   height: 250px;
+   
+}
 }
 
 @media screen and (max-width: 420px) {
@@ -160,4 +171,9 @@
     aside div {
         flex-basis: 100%;
     }
+    iframe {
+   
+   height: 220px;
+   
+}
 }
