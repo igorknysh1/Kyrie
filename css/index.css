@@ -127,6 +127,7 @@ article img {
     margin-bottom: 0px;
     height: 78px;
     width: 100%;
+    max-width: 800px;
     text-align: left;
 }
 
@@ -153,7 +154,7 @@ iframe {
 }
 
 aside{
-    max-width: 18%;
+    /*max-width: 18%;*/
     min-width: 17%;
     background: linear-gradient( #87153a, white);
 }
