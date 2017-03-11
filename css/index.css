@@ -155,6 +155,7 @@ iframe {
 
 aside{
     /*max-width: 18%;*/
+    width: 18%;
     min-width: 17%;
     background: linear-gradient( #87153a, white);
 }

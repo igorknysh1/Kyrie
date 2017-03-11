@@ -86,6 +86,9 @@
        flex-basis: 100%;
     }
     
+    aside{
+       width: 100%;
+    }
     aside h1 {
        flex-basis: 100%;
     }
