@@ -9,22 +9,14 @@
     }
 }
 
-@media screen and (max-width: 770px) {
-    body #navbottom {
-        visibility: visible;
-    }
-
-    body #nav {
-        visibility: hidden;
-        position: bottom;
-        padding-top: 25px;
-    }
+@media screen and (max-width: 766px) {
 iframe {
-   
    height: 350px;
-   
 }
 
+#comment {
+    max-width: 100%;
+}
 
     audio {
         position: fixed;

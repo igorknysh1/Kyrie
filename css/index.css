@@ -41,17 +41,9 @@ body {
 
 body #nav{
     position: fixed;
-    z-index: 10;
     width: 100%;
     visibility: visible;
     /*display:block;*/
-}
-
-body #navbottom{
-    position: fixed;
-    width: 100%;
-    visibility: hidden;
-    /*display:none;*/
 }
 
 audio {
@@ -188,11 +180,12 @@ footer .image {
 }
 
 #toTop {
-     bottom: 10%;
+    bottom: 10%;
     right: 9px;
     width: 60px;
     display:none;
     position:fixed;
+    z-index: 2000;
 }
 
 .instagram {
@@ -200,6 +193,7 @@ footer .image {
     bottom: 23%;
     right: 25px;
     width: 30px;
+    z-index: 2000;
 }
 
 .facebook {
@@ -207,6 +201,7 @@ footer .image {
     bottom: 30%;
     right: 25px;
     width: 30px;
+    z-index: 2000;
 }
 
 .youtube {
@@ -214,4 +209,5 @@ footer .image {
     bottom: 37%;
     right: 25px;
     width: 30px;
+    z-index: 2000;
 }
