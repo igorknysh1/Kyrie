@@ -43,13 +43,13 @@ body #nav{
     position: fixed;
     width: 100%;
     visibility: visible;
-    /*display:block;*/
+    z-index: 20;
 }
 
 audio {
     z-index: 10;
     position: fixed;
-    top: 53px;
+    top: 52px;
     right: 5%;
     width: 300px;
 }
@@ -58,6 +58,13 @@ main {
     display: flex;
 }
 
+#zebra {
+    background-color: rgba(255, 255, 255, 0.64);
+ }
+
+#responsenav{
+     right: 50%;
+}
 article {
     padding: 2% 8% 0% 8%;
      background: linear-gradient( #87153a, white);
@@ -86,6 +93,9 @@ table, th, td {
     border: 1px solid black;
     color: #ddd;
 }
+td{
+    text-align: center;
+}
 
 table {
     background: #8B0000;
@@ -93,6 +103,7 @@ table {
     width: 100%;
     border-color: grey;
 }
+
 
 .characteristic{
     text-align: center;

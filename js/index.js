@@ -9,19 +9,37 @@ $(function() {
     $('#toTop').click(function() {
         $('body,html').animate({scrollTop:0},1500);
     });
-  if($(window).width() <= 766 ){
- $( "#nav" ).removeClass( "navbar navbar-inverse" ).addClass( "navbar navbar-inverse navbar-default navbar-fixed-bottom" );
+//   if($(window).width() <= 766 ){
+//  $( "#nav" ).removeClass( "navbar navbar-inverse" ).addClass( "navbar navbar-inverse navbar-default navbar-fixed-bottom" );
+// } 
+// if($(window).width() > 766 ){
+//  $( "#nav" ).removeClass( "navbar navbar-inverse  navbar-default navbar-fixed-bottom" ).addClass( "navbar navbar-inverse" );
+// } 
+
+// function resizeScreen(){ 
+// if($(window).width() <= 766 ){
+//  $( "#nav" ).removeClass( "navbar navbar-inverse" ).addClass( "navbar navbar-inverse navbar-default navbar-fixed-bottom" );
+// } 
+// if($(window).width() > 766 ){
+//  $( "#nav" ).removeClass( "navbar navbar-inverse  navbar-default navbar-fixed-bottom" ).addClass( "navbar navbar-inverse" );
+// } 
+// } 
+// $(window).resize(function() { 
+// resizeScreen(); 
+// }); 
+ if($(window).width() <= 766 ){
+ $( "#nav" ).addClass( "navbar-default navbar-fixed-bottom" );
 } 
 if($(window).width() > 766 ){
- $( "#nav" ).removeClass( "navbar navbar-inverse  navbar-default navbar-fixed-bottom" ).addClass( "navbar navbar-inverse" );
+ $( "#nav" ).removeClass( "navbar-default navbar-fixed-bottom" );
 } 
 
 function resizeScreen(){ 
 if($(window).width() <= 766 ){
- $( "#nav" ).removeClass( "navbar navbar-inverse" ).addClass( "navbar navbar-inverse navbar-default navbar-fixed-bottom" );
+ $( "#nav" ).addClass( "navbar-default navbar-fixed-bottom" );
 } 
 if($(window).width() > 766 ){
- $( "#nav" ).removeClass( "navbar navbar-inverse  navbar-default navbar-fixed-bottom" ).addClass( "navbar navbar-inverse" );
+ $( "#nav" ).removeClass( "navbar-default navbar-fixed-bottom" );
 } 
 } 
 $(window).resize(function() { 
@@ -31,6 +49,14 @@ resizeScreen();
      setInterval(function() {
 	target.innerHTML = (new Date()).toLocaleTimeString();
 }, 1000);
+$(window).ready(function(){
+    $(".fluently").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
 });
 
 

@@ -142,6 +142,8 @@ iframe {
         right: 20px;
         width: 40px;
     }
+    
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -149,11 +151,10 @@ iframe {
         height: 180px;
         padding-top: 100px;
     }
+    
     iframe {
-   
-   height: 250px;
-   
-}
+    height: 250px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -164,9 +165,13 @@ iframe {
     aside div {
         flex-basis: 100%;
     }
+    
     iframe {
-   
-   height: 220px;
-   
-}
+        height: 220px;
+    }
+    
+    #responsenav{
+        right: 5%;
+    }
+
 }
